@@ -25,7 +25,7 @@ def directors_totals(nds)
     hash[name_index] = nil 
     movie_index = 0
     while movie_index < nds[director_index][:movies].length do
-      hash[name_index] += nds[director_index][:movies][movie_index][:worldwide_gross]
+      hash[name_index] = nds[director_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1
     end
     director_index += 1
