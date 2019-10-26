@@ -20,6 +20,8 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   hash = {}
   director_index = 0 
+  spielberg_index = 0 
+  spielberg_total = 0
   while director_index < nds.length do
     spielberg_index = 0 
     spielberg_total = 0
@@ -27,8 +29,8 @@ def directors_totals(nds)
       spielberg_total += nds[0][:movies][spielberg_index][:worldwide_gross]
       spielberg_index += 1
     end
-    hash = {"Stephen Spielberg" => spielberg_total}
   end
+    hash = {"Stephen Spielberg" => spielberg_total}
 end
 
 # [
