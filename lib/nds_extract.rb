@@ -23,8 +23,6 @@ def directors_totals(nds)
   spielberg_index = 0 
   spielberg_total = 0
   while director_index < nds.length do
-    spielberg_index = 0 
-    spielberg_total = 0
     while spielberg_index < nds[0][:movies].length do
       spielberg_total += nds[0][:movies][spielberg_index][:worldwide_gross]
       spielberg_index += 1
